@@ -1,14 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BRQ Challenge</title>
-</head>
-<body>
-    <article></article>
-    <footer></footer>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>FIAP Car App</title>
+  </head>
+  <body>
+    <div class="heading">
+      <i class="fa-solid fa-house-laptop"></i>
+      <h1>Devices</h1>
+    </div>
+    <div class="main-container">
+      <div class="devices-container">
+        <div class="device-container" onclick="active('warehouse')">
+          <button class="button-device warehouse"></button>
+          <i class="fa-solid fa-warehouse device-icon"></i>
+          <h3 class="name-device">Garage Door</h3>
+        </div>
+        <div class="device-container" onclick="active('lightbulb')">
+          <div class="buttons-container-device">
+            <input name="colorpicker" type="color" class="colorpicker" />
+            <button class="light-button-device lightbulb"></button>
+          </div>
+          <i class="fa-solid fa-lightbulb device-icon"></i>
+          <h3 class="name-device">Light</h3>
+        </div>
+        <div class="device-container" onclick="active('snowflake')">
+          <button class="button-device snowflake button-device-active"></button>
+          <i class="fa-regular fa-snowflake device-icon"></i>
+          <h3 class="name-device">Air Conditioner</h3>
+        </div>
+        <div class="device-container" onclick="active('door')">
+          <button class="button-device door"></button>
+          <i class="fa-solid fa-door-open device-icon"></i>
+          <h3 class="name-device">Door</h3>
+        </div>
+        <div class="device-container" onclick="active('video')">
+          <button class="button-device video"></button>
+          <i class="fa-solid fa-video device-icon"></i>
+          <h3 class="name-device">Security Camera</h3>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="script.js"></script>
+  </body>
 </html>
