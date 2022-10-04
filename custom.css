@@ -1,0 +1,18 @@
+
+i {
+    width: max-content;
+    margin: 5px auto;    
+    color: red;
+}
+
+.card {
+    max-width: 300px;
+    max-height: 300px;
+    margin: 20px;
+    margin-top: 20px;
+}
+
+
+h5, li {
+    text-align: center;
+}
